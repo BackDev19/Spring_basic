@@ -15,11 +15,9 @@ import java.util.List;
 @EnableJpaAuditing
 @SpringBootApplication
 public class Week02Application {
+
     public static void main(String[] args) {
         SpringApplication.run(Week02Application.class, args);
-
-        // Week02Application.java 의 main 함수 아래에 붙여주세요.
-
     }
 
     @Bean
@@ -45,8 +43,6 @@ public class Week02Application {
                 System.out.println(course.getTitle());
                 System.out.println(course.getTutor());
             }
-
-            courseRepository.deleteAll();
         };
     }
 }
